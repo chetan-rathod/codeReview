@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Faculty Portal</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini"><img class="circle-image" src="serosoft-solutions.png"></span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg"><img class="circle-image"  src="serosoft-solutions.png"><b>SSPL-INDORE</b></span>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <!-- Notifications: style can be found in dropdown.less -->
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-bell-o"></i>
+                                <span class="label label-warning">10</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="header">You have 10 notifications</li>
+                                <li>
+                                    <!-- inner menu: contains the actual data -->
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-users text-red"></i> 5 new members joined
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa fa-user text-red"></i> You changed your username
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="footer"><a href="#">View all</a></li>
+                            </ul>
+                        </li>
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="serosoft-solutions.png" class="user-image" alt="User Image">
+                                <span class="hidden-xs">Chetan Rathod</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header">
+                                    <img src="people-icon-in-vector-format11.jpg" class="img-circle" alt="User Image">
+                                    <p>
+                                        Chetan Rathod - Student
+                                        <small>Member since May 2017</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Body -->
+                                <li class="user">
+                                    <div class="col-xs-4 text-center">
+                                        <i style="color: orange" class="fa fa-tachometer" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <i style="color: green" class="fa fa-key" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <i style="color: red" class="fa fa-power-off" aria-hidden="true"></i>
+                                    </div>
+                                </li>
+                                <li class="user">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="index.html"><b style="color: black">Dashboard</b></a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#"><b style="color: black">Password</b></a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#"><b style="color: black">Sign Out</b></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu">
+                    <li class="treeview">.</li>
+                    <li class="treeview active">
+                        <a href="#">
+                            <i class="fa fa-book"></i> <span><b class="weight600">My Course Execution</b></span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Time Table</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Detailed Schedule</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Reading Material</a></li>
+                            <li class="active"><a href="#"><i class="fa fa-circle-o"></i> Mark Attendence</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Attendence Report</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-pencil"></i>
+                            <span><b class="weight600">My Examination</b></span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Manage Evaluation Remark</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i>Mark Entry</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i>Manage Evaluation Status</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i>Examination Result</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-paper-plane"></i> <span><b class="weight600">My Request</b></span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="#"><i class="fa fa-circle-o"></i>All Request</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Request Pending Action</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-cloud"></i> <span><b class="weight600">Service and Community</b></span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="#"><i class="fa fa-circle-o"></i> Service History</a></li>
+                            <li class=""><a href="#"><i class="fa fa-circle-o"></i> Service Opt In/OPt Out</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Communities History</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-book"></i> <span><b class="weight600">My Account</b></span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href="#"><i class="fa fa-circle-o"></i> Bills</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Receipts</a></li>
+                            <li class=""><a href="#"><i class="fa fa-circle-o"></i> Payment History</a></li>
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-user"></i> <span><b class="weight600">My Profile</b></span> <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li class=""><a href=""><i class="fa fa-circle-o"></i> Personal Details</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Addresses</a></li>
+                            <li class=""><a href="#"><i class="fa fa-circle-o"></i> Documents</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li id="tab1" role="presentation"><a href="#dashboard" aria-controls="dashboard" role="tab" data-toggle="tab">Dashboard&nbsp&nbsp<i class="fa fa-times" aria-hidden="true" id="closeTab"></i></a></li>
+                        <li id="tab2" role="presentation" class="active"><a href="#attendence" aria-controls="attendence" role="tab" data-toggle="tab">Mark Attendence&nbsp&nbsp<i class="fa fa-times" aria-hidden="true" id="closeTab1"></i></a></li>
+                    </ul>
+                </div>
+                <!-- 
+                <h1>
+            Dashboard
+            <small>Version 2.0</small>
+          </h1>
+                <ol class="breadcrumb">
+                    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                    <li class="active">Dashboard</li>
+                </ol> -->
+            </section>
+            <!-- Main content -->
+            <section class="content" style="background: white">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane" id="dashboard">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="box box-default ">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">COURSE DASHLET</h3>
+                                        <div class="box-tools pull-right">
+                                            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                            <button class="btn btn-box-tool"><i class="fa fa-repeat"></i></button>
+                                            <div class="btn-group">
+                                                <button class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown"><i class="fa fa-sort-desc"></i></button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">Export To Pdf</a></li>
+                                                    <li><a href="#">Export To Excel</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- /.box-tools -->
+                                    </div>
+                                    <!-- /.box-header -->
+                                    <div class="box-body table-responsive no-padding">
+                                        <div style="max-height: 250px; overflow-y: auto;">
+                                            <table class="table table-hover">
+                                                <tr>
+                                                    <th>Course Name</th>
+                                                    <th>Course Variant</th>
+                                                    <th>No. of Students</th>
+                                                    <th>Attendance</th>
+                                                    <th>Schedule</th>
+                                                    <th>Session</th>
+                                                    <th>Assignments</th>
+                                                    <th>Marke Entry</th>
+                                                    <th>Message</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>BE-105-Engineering Graphics</td>
+                                                    <td>BE-105-Engineering Graphics/Section A</td>
+                                                    <td>11</td>
+                                                    <td><a href="markAttendence.html">Mark</a></td>
+                                                    <td><a href="#">View</a></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td><a href="#">Enter Mark</a></td>
+                                                    <td><a href="#">Send</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BE-104-Communication Skill</td>
+                                                    <td>BE-104-Communication Skill/Section A</td>
+                                                    <td>11</td>
+                                                    <td><a href="markAttendence.html">Mark</a></td>
+                                                    <td><a href="#">View</a></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td><a href="#">Enter Mark</a></td>
+                                                    <td><a href="#">Send</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BE-103-Basic Electrical & Electronic Engineering</td>
+                                                    <td>BE-103-Basic Electrical & Electronic Engineering/Secction A</td>
+                                                    <td>11</td>
+                                                    <td><a href="markAttendence.html">Mark</a></td>
+                                                    <td><a href="#">View</a></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td><a href="#">Enter Mark</a></td>
+                                                    <td><a href="#">Send</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BE-102-Engineering Chemistry</td>
+                                                    <td>BE-102-Engineering Chemistry/Section A</td>
+                                                    <td>11</td>
+                                                    <td><a href="markAttendence.html">Mark</a></td>
+                                                    <td><a href="#">View</a></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td><a href="#">Enter Mark</a></td>
+                                                    <td><a href="#">Send</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>BE-101-Engineering Mathematics-1</td>
+                                                    <td>BE-101-Engineering Mathematics-1/Section A</td>
+                                                    <td>11</td>
+                                                    <td><a href="markAttendence.html">Mark</a></td>
+                                                    <td><a href="#">View</a></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td><a href="#">Enter Mark</a></td>
+                                                    <td><a href="#">Send</a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- /.box-body -->
+                                </div>
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane active" id="attendence">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="box box-default collapsed-box">
+                                    <div class="box-header with-border">
+                                        <h3 class="box-title">Search</h3>
+                                        <div class="box-tools pull-right">
+                                            <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                        <!-- /.box-tools -->
+                                    </div>
+                                    <!-- /.box-header -->
+                                    <div class="box-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="form-group col-md-4">
+                                                    <label>Course:</label>
+                                                    <label class="red">*</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Enter 3 char for auto search">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course&nbsp&nbsp<span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">CS-101-Engineering Mathematics</a> </li>
+                                                                <li><a href="#">CS-102-Engineering Chemistry</a></li>
+                                                                <li><a href="#">CS-103-Basic Civil Engineering</a></li>
+                                                                <li><a href="#">CS-104-Basic Computer Engineering</a></li>
+                                                                <li><a href="#">CS-105-Communication Skill</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <div class="input-group">
+                                                        <input type="text" class="form-control" placeholder="Enter 3 char for auto search">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Course&nbsp&nbsp<span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">CS-101-Engineering Mathematics</a> </li>
+                                                                <li><a href="#">CS-102-Engineering Chemistry</a></li>
+                                                                <li><a href="#">CS-103-Basic Civil Engineering</a></li>
+                                                                <li><a href="#">CS-104-Basic Computer Engineering</a></li>
+                                                                <li><a href="#">CS-105-Communication Skill</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-8">
+                                                    <label>Program:</label>
+                                                    <label class="red">*</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">BE</a></li>
+                                                                <li><a href="#">MBA</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Batch:</label>
+                                                    <label class="red">*</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" style="background: transparent;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Batch&nbsp&nbsp <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Batch-2016</a></li>
+                                                                <li><a href="#">Batch-2017</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-4">
+                                                    <label>Period:</label>
+                                                    <label class="red">*</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" style="background: transparent; " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Sem-1</a></li>
+                                                                <li><a href="#">Sem-2</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Section:</label>
+                                                    <label class="red">*</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" style="background: transparent;  " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Section-A</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-4">
+                                                    <label>Date:</label>
+                                                    <label class="red">*</label>
+                                                    <div class='input-group date' id='datetimepicker1'>
+                                                        <input type='text' class="form-control" />
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Primary Faculty:</label>
+                                                    <label class="red">*</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Shashank</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label>Topic:</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Default</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-6">
+                                                    <label>Time Slot:</label>
+                                                    <label class="red">*</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">Action</a></li>
+                                                                <li><a href="#">Another action</a></li>
+                                                                <li><a href="#">Something else here</a></li>
+                                                                <li role="separator" class="divider"></li>
+                                                                <li><a href="#">Separated link</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-md-2">
+                                                    <label>Start Time:</label>
+                                                    <label class="red">*</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">11:00 AM</a></li>
+                                                                <li><a href="#">11:30 AM</a></li>
+                                                                <li><a href="#">12:00 PM</a></li>
+                                                                <li><a href="#">12:30 PM</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-2">
+                                                    <label>End Time:</label>
+                                                    <label class="red">*</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control">
+                                                        <div class="input-group-btn">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span class="caret"></span></button>
+                                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                                <li><a href="#">11:00 AM</a></li>
+                                                                <li><a href="#">11:30 AM</a></li>
+                                                                <li><a href="#">12:00 PM</a></li>
+                                                                <li><a href="#">12:30 PM</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                                    <button class="btn btn-block btn-primary">Search</button>
+                                                </div>
+                                                &nbsp&nbsp&nbsp
+                                                <div class="col-md-2 col-sm-3 col-xs-4">
+                                                    <button class="btn btn-block btn-default">Reset</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- /.box-body -->
+                                </div>
+                                <div class="row" style="margin-left: 0px">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <p class="text-success">Mark all - Present</p>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <p class="text-danger">Mark all - Absent</p>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        <p class="text-muted">Mark all - Leave</p>
+                                    </label>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="box box-default collapsed-box">
+                                            <div class="box-header with-border">
+                                                <h3 class="box-title">Student Attendence</h3>
+                                                <div class="box-tools pull-right">
+                                                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                                <!-- /.box-tools -->
+                                            </div>
+                                            <!-- /.box-header -->
+                                            <div class="box-body table-responsive no-padding">
+                                                <div style="max-height: 250px; overflow-y: auto;">
+                                                    <table class="table table-hover">
+                                                        <tr>
+                                                            <th>
+                                                                <center>Sr.No.</center>
+                                                            </th>
+                                                            <th>Admission Code</th>
+                                                            <th>Student Code</th>
+                                                            <th>
+                                                                <center>Student Name</center>
+                                                            </th>
+                                                            <th>
+                                                                <center>Present</center>
+                                                            </th>
+                                                            <th>
+                                                                <center>Absent</center>
+                                                            </th>
+                                                            <th>
+                                                                <center>Others</center>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <center>1</center>
+                                                            </td>
+                                                            <td>AD/101</td>
+                                                            <td>STU/101</td>
+                                                            <td>
+                                                                <center>Rahul</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <center>2</center>
+                                                            </td>
+                                                            <td>AD/102</td>
+                                                            <td>STU/102</td>
+                                                            <td>
+                                                                <center>Rahul</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <center>3</center>
+                                                            </td>
+                                                            <td>AD/103</td>
+                                                            <td>STU/103</td>
+                                                            <td>
+                                                                <center>Rahul</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <center>4</center>
+                                                            </td>
+                                                            <td>AD/104</td>
+                                                            <td>STU/104</td>
+                                                            <td>
+                                                                <center>Rahul</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <center>5</center>
+                                                            </td>
+                                                            <td>AD/105</td>
+                                                            <td>STU/105</td>
+                                                            <td>
+                                                                <center>Rahul</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <input type="checkbox">
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /.box-body -->
+                                        </div>
+                                    </div>
+                                    <!-- /.box -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="box box-default collapsed-box">
+                                            <div class="box-header with-border">
+                                                <h3 class="box-title">Attendence Summary</h3>
+                                                <div class="box-tools pull-right">
+                                                    <button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                                <!-- /.box-tools -->
+                                            </div>
+                                            <!-- /.box-header -->
+                                            <div class="box-body table-responsive no-padding">
+                                                <div style="max-height: 250px; overflow-y: auto;">
+                                                    <table class="table table-hover">
+                                                        <tr>
+                                                            <th>
+                                                                <center>Total No. of Students</center>
+                                                            </th>
+                                                            <th>
+                                                                <center>Total No. of Present</center>
+                                                            </th>
+                                                            <th>
+                                                                <center>Total No. of Absent</center>
+                                                            </th>
+                                                            <th>
+                                                                <center>Others</center>
+                                                            </th>
+                                                            <th>
+                                                                <center>Present %</center>
+                                                            </th>
+                                                            <th>
+                                                                <center>Absent %</center>
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <center>50</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>25</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>25</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>0</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>50</center>
+                                                            </td>
+                                                            <td>
+                                                                <center>50</center>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <!-- /.box-body -->
+                                        </div>
+                                    </div>
+                                    <!-- /.box -->
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-3 col-xs-4">
+                                        <button class="btn btn-block btn-primary" disabled="disabled">Save</button>
+                                    </div>
+                                    &nbsp&nbsp&nbsp
+                                    <div class="col-md-2 col-sm-3 col-xs-4">
+                                        <button class="btn btn-block btn-default">Reset</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.box -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col -->
+            </section>
+        </div>
+        <!-- /.row -->
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+            Build Name:Jaguar Release Date:27-05-2017 Version:V8 About Us Contact Us Privacy Policy
+        </div>
+        <strong>Copyright &copy; 2017,<a href="index.html"> Academia</a>.</strong> All rights reserved.
+    </footer>
+    <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+    <!-- jQuery 2.1.4 -->
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+    <!-- datepicker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="dist/js/app.js"></script>
+</body>
+
+</html>
